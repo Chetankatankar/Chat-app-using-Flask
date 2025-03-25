@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<style>
+    body{
+        /* background-color: rgb(125, 42, 232); */
+        /* background-image: url("/images/tree2.jpg"); */
+        background-image: linear-gradient(rgba(255, 166, 0, 0.752), rgba(255, 0, 0, 0.74)); 
+        background-image: url("/static/images/ethan-walsweer-DMHK9_4JFkI-unsplash.jpg");
+        
+    }
+    .container{
+        display: flex;
+        /* height: 400px; */
+        /* padding: 100px; */
+        justify-content: center;
+        margin-top: 80px;
+        /* box-shadow: 2px 2px 2px white; */
+        /* background-image: linear-gradient(rgba(255, 166, 0, 0.355), rgba(255, 0, 0, 0.74)); */
+        
+        /* border: 1px solid black; */
+        /* transition-duration: 2s; */
+    }
+    .register{
+        width: 25%;
+        background-color: white;
+        padding: 20px;
+        box-sizing: border-box;
+        align-content: center;
+        /* margin-top: -100px; */
+    }
+
+    .reg-img{
+        width: 25%;
+    }
+
+    /* .reg-img img{
+        width: 100%;
+        height: 300px;
+    } */
+
+    .username{
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+
+    .email{
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+
+    .password{
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+
+    .city{
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+
+    .btn{
+        background-color: rgb(125, 42, 232);
+        border: none;
+        color: white;
+        padding: 5px 100px;
+        border-radius: 10px;
+    }
+
+    .username-icon{
+        color: rgb(125, 42, 232);
+        margin: 0 10px 0 0;
+    }
+
+    .email-icon{
+        color: rgb(125, 42, 232);
+        margin: 0 10px 0 0;
+    }
+
+    .password-icon{
+        color: rgb(125, 42, 232);
+        margin: 0 10px 0 0;
+    }
+
+    .city-icon{
+        color: rgb(125, 42, 232);
+        margin: 0 10px 0 0;
+    }
+
+</style>
+<body>
+<!-- register.html -->
+ <div class="container">
+    <div class="register">
+        <form action="/getdata" method="POST">
+            <div>
+                
+            </div>
+            <h2 style="color: rgb(125, 42, 232);">Create an Account!</h2>
+    
+            <div class="username">
+                <i class="fa-solid fa-user username-icon"></i>
+                <input class="username" type="text" name="username" placeholder="Enter Username" required><br><br>
+            </div>
+    
+            <div class="email">
+                <i class="fa-solid fa-envelope email-icon"></i>
+                <input class="email" type="email" name="email" placeholder="Enter Email" required><br><br>
+            </div>
+            
+            <div class="password">
+                <i class="fa-solid fa-lock password-icon"></i>
+                <input class="password" type="password" name="password" placeholder="Enter Password" required><br><br>
+            </div>
+    
+            <div class="city">
+                <i class="fa-solid fa-city city-icon"></i>
+                <input class="city" type="text" name="city" placeholder="Enter City" required><br><br>
+            </div>
+    
+            <div>
+                <button class="btn" type="submit">Register!</button>
+            </div>  <br> 
+    
+            <a href="/login" style="color: blue;">Already have an account? Login here.!</a>
+    
+        </form><br>
+
+       
+    </div>
+
+    <div class="reg-img">
+        <img src="/static/images/login page right porstion.png" alt="">
+    </div>
+
+
+
+ </div>
+
+
+    
+</body>
+</html>

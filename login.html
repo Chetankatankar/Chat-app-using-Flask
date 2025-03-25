@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    body{
+        /* background-color: rgb(125, 42, 232); */
+        background-image: url("/static/images/the-chaffins-yMkJtHu2GDI-unsplash.jpg");
+    }
+
+    .container{
+        display: flex;
+        /* height: 400px; */
+        /* padding: 100px; */
+        justify-content: center;
+        margin-top: 50px;
+        /* box-shadow: 2px 2px 2px white; */
+        /* border: 1px solid black; */
+        transition-duration: 2s;
+ 
+    }
+    .container:hover{
+        transform: scale(1.06);
+    }
+
+    .login-page{
+        width: 25%;
+        background-color: white;
+        padding: 20px;
+        box-sizing: border-box;
+        align-content: center;
+        /* margin-top: -100px; */
+      
+    }
+    
+
+    .login-image{
+        width: 25%;
+    }
+
+    .email{
+        border-left: none;
+        border-right: none;
+        border-top: none;
+    }
+
+    .email-icon{
+        color: rgb(125, 42, 232);
+        margin: 0 10px 0 0;
+    }
+
+    .password{
+        border-left: none;
+        border-right: none;
+        border-top: none;
+    }
+
+    .password-icon{
+        color: rgb(125, 42, 232);
+        margin: 0 10px 0 0;
+    }
+
+    .btn{
+        background-color: rgb(125, 42, 232);
+        border: none;
+        color: white;
+        padding: 5px 100px;
+        border-radius: 10px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="login-page">
+            <h2 style="color: rgb(125, 42, 232);">Login here!</h2>
+            <!-- <i class="fa-solid fa-envelope"></i> -->
+            <form action="/login" method="POST">
+
+                <div class="icon">
+                    <i class="fa-solid fa-envelope email-icon"></i>
+                    <input class="email" type="email" name="email" placeholder="Enter your email">  
+                    <br><br>
+                </div>
+
+                <div class="icon">
+                    <i class="fa-solid fa-lock password-icon"></i>
+                    <input class="password" type="password" name="password" required placeholder="Enter your password..">
+                    <br><br>
+                </div>
+
+                <div><a href="" style="color: rgb(125, 42, 232);">Forgot password?</a></div><br>
+
+                <div>
+                    <button class="btn" type="submit">Login!!</button>
+                </div><br>
+
+                <a href="/" style="color: blue;">Don't have an account? sign up now!</a>
+
+                
+            </form>
+        </div>
+        <div class="login-image">
+            <img src="/static/images/login page right porstion.png" alt="">
+        </div>
+
+    </div>
+
+</body>
+</html>

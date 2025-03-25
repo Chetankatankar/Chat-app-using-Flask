@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Users List</title>
+    <style>
+        body {
+            font-family: Arial Black;
+            background-color: #f4f4f4;
+            background-image: url("/static/images/ethan-walsweer-DMHK9_4JFkI-unsplash.jpg");
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 350px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 10px black;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            background: rgb(214, 147, 188);
+            color: white;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: transform 0.5s ease;
+        }
+
+        li:hover{
+            background-color: rgb(45, 45, 45);
+            transform:  scale(0.92);
+        }
+
+        a {
+            background: #007bff;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: transform 0.5s ease;
+        }
+
+        a:hover {
+            background: #0056b3;
+            transform:  scale(0.92);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Select to chat-</h2>
+        <ul>
+            {% for data in users %}
+            <li>
+                {{ data[1] }}
+                <a href="/chat?receiver_id={{ data[0] }}">Chat</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+</body>
+</html>
